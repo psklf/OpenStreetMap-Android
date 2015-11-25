@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">maomap</string>
+	<string name="btn_loc">loc</string>
+	<string name="btn_getmsg">get</string>
+	<string name="btn_sendmsg">send</string>
+	<string name="btn_cal_center">!</string>
+	<string name="edit_send">YourName</string>
+	<string name="edit_get">GetName</string>
+	<string name="btn_sign">Sign in</string>
+	<string name="text_logname">User Name:</string>
+	<string name="text_password">Password:</string>
+	<string name="btn_signin">Sign in</string>
+	<string name="btn_signup">Sign up</string>
+</resources>
