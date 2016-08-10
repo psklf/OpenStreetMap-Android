@@ -94,12 +94,12 @@ public class MainActivity extends Activity implements
 	
 	Drawable drawable;
 	ArrayList<OverlayItem> items;
-    ItemizedOverlay<OverlayItem> mLocationOverlay;
-    ResourceProxy mResourceProxy;
+    	ItemizedOverlay<OverlayItem> mLocationOverlay;
+    	ResourceProxy mResourceProxy;
     
-    SimpleLocationOverlay simpleLocation;
-    Marker nodemarker;
-    Polyline roadOverlay;
+    	SimpleLocationOverlay simpleLocation;
+    	Marker nodemarker;
+    	Polyline roadOverlay;
     
 	GeoPoint tempgp1 = new GeoPoint(0,0);
 	
@@ -120,17 +120,17 @@ public class MainActivity extends Activity implements
     **********************/
 	
     
-    public double nowlatitude;
-    public double nowlongitude;
-    public double templati1;
-    public double templong1;
+    	public double nowlatitude;
+    	public double nowlongitude;
+    	public double templati1;
+    	public double templong1;
     
-    public int ifcalcenter=0;
-    public int ifhaveloc = 0;
+    	public int ifcalcenter = 0;
+    	public int ifhaveloc = 0;
 	
 	String username;
-	//
-    //btn
+	
+    	//btn
 	Button getloc;
 	Button sendmsg;
 	Button getmsg;
