@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textlogname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="14dp"
+        android:text="@string/text_logname"
+        android:textSize="20sp" />
+    
+    <EditText
+        android:id="@+id/edit_logname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textlogname"
+        android:layout_toRightOf="@+id/textlogname"
+        android:ems="6"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit_logname"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:text="@string/text_password"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_password"
+        android:layout_toRightOf="@+id/text_password"
+        android:ems="6"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+
+    <Button 
+        android:id="@+id/btn_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_password"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:text="@string/btn_signin"
+        />
+    
+    <Button 
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_signin"
+        android:layout_alignBottom="@+id/btn_signin"
+        android:layout_marginLeft="14dp"
+         android:text="@string/btn_signup"
+        />
+
+</RelativeLayout>

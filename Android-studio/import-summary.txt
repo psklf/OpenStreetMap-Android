@@ -1,0 +1,73 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* AndroidManifest.xml~
+* Readme.txt
+* Readme.txt~
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* libs/BmobSDK_V3.3.5_0408.jar => app/libs/BmobSDK_V3.3.5_0408.jar
+* libs/Bmob_Push_V0.6beta_20150408.jar => app/libs/Bmob_Push_V0.6beta_20150408.jar
+* libs/TencentLocationSDK_v4.1_r161859.jar => app/libs/TencentLocationSDK_v4.1_r161859.jar
+* libs/armeabi/libtencentloc.so => app/src/main/jniLibs/armeabi/libtencentloc.so
+* libs/commons-lang3-3.3.2.jar => app/libs/commons-lang3-3.3.2.jar
+* libs/locSDK_5.02.jar => app/libs/locSDK_5.02.jar
+* libs/osmbonuspack_v5.1.jar => app/libs/osmbonuspack_v5.1.jar
+* libs/osmdroid-android-4.3.jar => app/libs/osmdroid-android-4.3.jar
+* libs/slf4j-android-1.6.1-RC1.jar => app/libs/slf4j-android-1.6.1-RC1.jar
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* src/com/example/maosea/MainActivity.java~ => app/src/main/resources/com/example/maosea/MainActivity.java~
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

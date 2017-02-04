@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <org.osmdroid.views.MapView  
+        android:id="@+id/map"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        tilesource="MapquestOSM"  
+        android:clickable="true"  
+        android:enabled="true" >  
+    </org.osmdroid.views.MapView>
+
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btn_loc" />
+
+    <Button
+        android:id="@+id/btnsendmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnGetLocation"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btn_sendmsg" />
+
+    <Button
+        android:id="@+id/btngetmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnsendmsg"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btn_getmsg" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnsendmsg"
+        android:layout_toRightOf="@+id/btnsendmsg"
+        android:ems="6"
+        android:hint="@string/edit_send"/>
+    
+    <EditText
+        android:id="@+id/edit_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btngetmsg"
+        android:layout_toRightOf="@+id/btngetmsg"
+        android:ems="6"
+        android:hint="@string/edit_get" />
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:maxLines="2"
+        />
+
+    <Button 
+        android:id="@+id/btnsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_sign"/>
+    <Button
+        android:id="@+id/btncal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/btnsign"
+        android:text="@string/btn_cal_center" />
+
+
+
+</RelativeLayout>
