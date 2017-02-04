@@ -20,6 +20,7 @@ android {
 
 dependencies {
     compile 'com.google.code.gson:gson:2.4'
+    compile 'com.android.support:support-v13:25.0.1'
     compile files('libs/BmobSDK_V3.3.5_0408.jar')
     compile files('libs/Bmob_Push_V0.6beta_20150408.jar')
     compile files('libs/TencentLocationSDK_v4.1_r161859.jar')
@@ -28,5 +29,4 @@ dependencies {
     compile files('libs/osmbonuspack_v5.1.jar')
     compile files('libs/osmdroid-android-4.3.jar')
     compile files('libs/slf4j-android-1.6.1-RC1.jar')
-    compile 'com.android.support:support-v13:25.0.1'
 }

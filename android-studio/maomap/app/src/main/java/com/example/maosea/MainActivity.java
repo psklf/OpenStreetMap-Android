@@ -349,14 +349,12 @@ public class MainActivity extends Activity implements
 						@Override
 						public boolean onItemLongPress(int arg0,
 								OverlayItem arg1) {
-							// TODO Auto-generated method stub
 							return false;
 						}
 
 						@Override
 						public boolean onItemSingleTapUp(int arg0,
 								OverlayItem arg1) {
-							// TODO Auto-generated method stub
 							toast("tapup!");
 							return false;
 						}
@@ -419,7 +417,6 @@ public class MainActivity extends Activity implements
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		switch (v.getId()){
 		case R.id.btnsendmsg:
 			if(username == null){
@@ -439,11 +436,9 @@ public class MainActivity extends Activity implements
 				mypoint.save(MainActivity.this,new SaveListener(){
 					@Override
 					public void onSuccess() {
-						// TODO Auto-generated method stub
 						toast("add data successful！");
 					}
 					public void onFailure(int code, String msg) {
-						// TODO Auto-generated method stub
 						toast("add data failure：" + msg);
 					}
 				});
